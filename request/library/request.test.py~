@@ -1,0 +1,18 @@
+import requests as request
+
+
+response = request.get("https://api.github.com/events")
+
+if(response.status_code == 200):
+    print("success")
+    print(response.headers['content-type'])
+    print()
+    print(response.text[0:100])
+
+else:
+    print("error")
+
+
+url = 'https://httpbin.org/get'
+userName = 'dila'
+password = '1234'

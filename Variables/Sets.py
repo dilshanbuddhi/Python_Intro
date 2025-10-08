@@ -1,0 +1,51 @@
+#sets are used to store multiple items in a single variable.
+#sets are unordered, unchangeable, and do not allow duplicate values.
+#sets are written with curly brackets {}
+#sets are used to remove duplicates from a list
+
+fruits = {"apple", "banana", "cherry"}
+print(type(fruits) , "Type of set1")
+# api hadapu piliwelata nemei enne
+print(fruits , "set1")
+
+#not allow duplicate values
+fruits = {"apple", "banana", "cherry", "apple"}
+print(fruits , "set2")
+
+#we cant access items in a set by referring to an index or a key
+#because sets are unordered
+
+#length of a set
+print(len(fruits) , "length of set")
+
+#add items to a set
+fruits.add("orange")
+print(fruits , "add items to a set")
+
+#add items with update()
+fruits.update({"orange", "mango", "grapes"})
+print(fruits , "add items with update()")
+
+#remove items from a set
+fruits.remove("banana")
+print(fruits , "remove items from a set")
+
+set_one = {"apple", "banana", "cherry"}
+set_two = {"google", "microsoft", "apple"}
+set_three = set_one.union(set_two)
+print(set_three , "union of sets")
+
+set_one = {"apple", "banana", "cherry"}
+set_two = {"google", "microsoft", "apple"}
+set_three = set_one.intersection(set_two)
+print(set_three , "intersection of sets")
+
+set_one = {"apple", "banana", "cherry"}
+set_two = {"google", "microsoft", "apple"}
+set_three = set_one.difference(set_two)
+print(set_three , "difference of sets")
+
+set_one = {"apple", "banana", "cherry"}
+set_two = ["google", "microsoft", "apple"]
+set_one.update(set_two)
+print(set_one , "update of sets")

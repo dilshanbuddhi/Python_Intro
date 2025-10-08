@@ -1,0 +1,68 @@
+#python dictionaries uses key value pairs
+
+this_dict = {
+    "name" : "dila",
+    "age" : 20,
+    "is_student" : True
+}
+
+#dictionaries are ordered
+#dictionaries are changeable
+#dictionaries are not allow duplicates
+
+print(this_dict)
+print(type(this_dict))
+
+this_dict["name"] = "dilshan"
+print(this_dict)
+
+print(this_dict["name"])
+print(this_dict.get("age"))
+
+print(len(this_dict))
+
+#add items to a dictionary
+this_dict["address"] = "colombo"
+print(this_dict)
+
+#remove items from a dictionary
+del this_dict["address"]
+print(this_dict)
+
+this_dict1 = {
+    "name" : "sheky",
+    "brand" : "labradore",
+    "color" : "white"
+}
+
+print(this_dict1 , "  original one")
+
+temp_dict = this_dict1.copy()
+print(temp_dict  , " temp dictionary")
+
+this_dict1["color"] = "black"
+print(this_dict1 , "updated original one")
+print(temp_dict  , " copy dictionary")
+
+
+# remove the duplicate number in the below lost and sort the remaining item in an assending order
+
+num_list = [50 , 70 , 50 , 43 ,23 , 28 ,70 , 23 ,11 ]
+
+temp_tuple = set(num_list)
+print(temp_tuple)
+
+new_list = list(temp_tuple)
+
+new_list.sort()
+print(new_list , " sort")
+
+
+
+print(new_list ,  " sort and remove dupies")
+
+
+
+
+
+

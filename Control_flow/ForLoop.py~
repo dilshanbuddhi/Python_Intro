@@ -1,0 +1,97 @@
+"""
+write a py program display even numbers of the belove list
+"""
+
+"""
+number_list = [7, 22 , 14 , 9 , 8 , 12]
+
+for i in number_list:
+    if i % 2 == 0 :
+        print(i , "is even number ")
+"""
+
+
+"""
+using a for loop display all positive integer with are belove 15
+"""
+
+"""
+for i in range(15):
+    print(i)
+    """
+
+
+"""
+write a py program to create a new list with the scare values of each number of the belove list
+"""
+
+"""
+my_list = [10 ,5 ,9 , 4 ,2]
+scare_values = []
+
+for i in my_list :
+    value = i ** 2
+    scare_values.append(value)
+
+
+print(scare_values)
+"""
+
+"""
+write  a python program to display all positive multipliers of 7 which are belove than the user entered number ( you should check
+the input valid)
+"""
+
+"""
+number = int(input(" enter a number :"))
+
+if number > 0 :
+    for i in range(7 , number , 7):
+        print(i)
+
+else:
+    print("invalid number ")
+"""
+
+"""
+write a py program to demostrator leanalsearch 
+"""
+
+
+"""
+print("----------------------------------")
+
+num_list = [1,2,3,4.5,6,7,8,9]
+num = 1
+is_valid = False
+
+for i in num_list:
+    if num == i :
+        is_valid = True
+        break
+
+
+if is_valid:
+    print("this value in list")
+else:
+    print("this value not in list")
+"""
+
+
+"""
+Q modify the above program to display the list of squares numbers of even number in the list 
+"""
+
+
+"""
+num_list = [10 ,5 ,9 , 4 ,2]
+new_list = [i ** 2 for i in num_list if i % 2 == 0]
+print(new_list)
+"""
+
+sports = ["cricket" , "football" , "basketball" , "tennis"]
+
+for sports in "cricket" :
+    print(sports)
+
+

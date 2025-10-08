@@ -1,0 +1,58 @@
+# def greet(name):
+#     return f"Hello, {name}!"
+#
+# print(greet("World"))
+
+print("👻 VARIABLES 👻")
+
+name = " dila "
+age = 20
+is_student = True
+
+print(type(name) , name)
+print(type(age) , age)
+print(type(is_student) , is_student)
+
+# Variable Rules 🌈
+    # 1️⃣ A variable name must start with a letter or the underscore character
+    # 2️⃣ A variable name cannot start with a number
+    # 3️⃣ A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+    # 4️⃣ Variable names are case-sensitive
+    # 5️⃣ Avoid using Python keywords as variable names
+
+    #❌ if = 10
+    #❌ else = 20
+
+# ❌ @name = " dila "
+# ❌ @age = 20
+# @age = 20
+# 🤦️IndentationError: unexpected indent
+
+# 🟢 name = " dila "
+# 🟢 _age = 20
+
+# Best Practices 🌈
+    # 1️⃣ python variable names are lowercase with words separated by underscores as necessary
+
+    # 🟢 first_name = "buddhi"
+    # 🟢 last_name = "dilshan"
+
+    # ❌ FirstName = "buddhi"  camelCase  😒 not allowed 😒
+
+    # Variable name must be descriptive
+
+    # 🟢 student_name = "buddhi"
+    # ❌ st = "buddhi"
+
+# Constants 🌈
+    # 1️⃣ Constants are named in ALL_CAPS with words separated by underscores as necessary
+    # 2️⃣ Constants should be descriptive
+    # 3️⃣ Constants should be immutable
+
+    # 🟢 PI = 3.14
+    # ❌ pi = 3.14
+
+
+
+
+

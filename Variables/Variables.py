@@ -1,0 +1,18 @@
+# num is a float, and it's written in scientific notation
+# 2.5e12 means 2.5 x 10^12
+# the 'e' is short for "exponent" and is used to indicate the power of 10
+num = 2.5e12
+print(num)
+print(type(num))
+
+a = 7
+b = float(a)
+print(b)
+print(type(b))
+print(a , type(a))
+
+c = 7.0
+d = int(c)
+print(d)
+print(type(d))
+print(c , type(c))

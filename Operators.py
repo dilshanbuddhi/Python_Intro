@@ -1,0 +1,83 @@
+x,y = 7,3
+
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x // y)
+print(x % y)
+print(x ** y)
+
+print("----------------------------------")
+
+x += 3
+print(x)
+
+x -= 3
+print(x)
+
+x *= 3
+print(x)
+
+x /= 3
+print(x)
+
+x //= 3
+print(x)
+
+x %= 3
+print(x)
+
+x **= 3
+print(x)
+
+
+print("Comparison Operators")
+
+x,y = 7,3
+
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
+
+print("logical Operators")
+
+x,y = 7,3
+
+print(x > 5 and x < 10)
+print(x > y or y < x)
+print(not x > y)
+
+print("Identity Operators")
+
+x,y = 7,3
+
+print(x is y)
+print(x is not y)
+
+x = 1
+y = 1
+
+print(x is y)
+print(x is not y)
+
+
+print("Membership Operators")
+
+x,y = 7,3
+
+my_list = [1,2,3,4,5]
+
+print(x in my_list)
+print(x not in my_list)
+
+
+print("Bitwise Operators")
+
+a, b = 9,10
+
+print(a & b)
+

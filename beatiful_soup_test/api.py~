@@ -1,0 +1,48 @@
+"""
+weather API
+"""
+
+import requests as req
+import bs4 as bs
+"""
+curl =  "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m"
+
+response = req.get(curl)
+
+if response.status_code == 200:
+    print(response.headers['content-type'])
+    print()
+    print(response.text)
+else:
+    print("request failed")"""
+
+
+def fetch_weather(lat, lon , current):
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current={current},windspeed_10m"
+    response = req.get(url)
+
+    if response.status_code == 200:
+        data = dict(response.json())
+        return data
+    else:
+        return None
+
+
+def parse_weather_data(data):
+ #{'latitude': 52.52, 'longitude': 13.419998, 'generationtime_ms': 0.030517578125, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 38.0, 'current_units': {'time': 'iso8601', 'interval': 'seconds', 'temperature_2m': '°C'}, 'current': {'time': '2025-07-30T10:00', 'interval': 900, 'temperature_2m': 20.4}}
+
+    weather_dict = {
+        "wind_speed": data["current"]["windspeed_10m"],
+        "temperature": data["current"]["temperature_2m"]
+    }
+
+    return weather_dict
+
+
+weather_data =fetch_weather(52.52, 13.41, "temperature_2m")
+
+print(parse_weather_data(weather_data))
+
+
+
+
